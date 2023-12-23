@@ -6,6 +6,21 @@
     "action":{
         "default_popup": "popup.html",
         "default_icon": "good_png.png"
-    }
+    },
+    "backgruond": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permission":[
+        "storage",
+        "webRequest",
+        "background",
+        "tabs",
+        "webRequestBlocking"
+    ],
+    "host_permissions":[
+        "*"
+    ]
+
     
 }
