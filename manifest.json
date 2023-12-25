@@ -15,8 +15,7 @@
         "storage",
         "webRequest",
         "background",
-        "tabs",
-        "webRequestBlocking"
+        "tabs"
     ],
     "host_permissions":[
         "<all_urls>"
