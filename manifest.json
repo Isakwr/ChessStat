@@ -7,11 +7,11 @@
         "default_popup": "popup.html",
         "default_icon": "good_png.png"
     },
-    "backgruond": {
+    "background": {
         "service_worker": "background.js",
         "type": "module"
     },
-    "permission":[
+    "permissions":[
         "storage",
         "webRequest",
         "background",
@@ -19,7 +19,7 @@
         "webRequestBlocking"
     ],
     "host_permissions":[
-        "*"
+        "<all_urls>"
     ]
 
     

@@ -1,10 +1,12 @@
-var callback = function(details){
-    alert("youtube detected KASJHASIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
-}
-var filter = {urls: ["https://www.youtube.com/*"]};
-var opt_extraInfoSpec = [];
+let filter = {urls: ["https://www.youtube.com"]};
 
 
-chrome.webRequest.onBeforeRequest.addListener(
-    callback, filter, opt_extraInfoSpec
-);
+chrome.webRequest.onBeforeRequest.addListener(function(details){
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    return;
+},{urls: ["<all_urls>"]},["blocking"]);
