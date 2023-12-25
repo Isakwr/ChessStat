@@ -1,12 +1,7 @@
 let filter = {urls: ["https://www.youtube.com"]};
 
 
-chrome.webRequest.onBeforeRequest.addListener(function(details){
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+chrome.webRequest.onSendHeaders.addListener(function(details){
     console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
     return;
-},{urls: ["https://youtube.com"]},[]);
+},{urls: ["*://www.youtube.com/*"]},[]);
