@@ -2,6 +2,6 @@ let filter = {urls: ["https://www.youtube.com"]};
 
 
 chrome.webRequest.onSendHeaders.addListener(function(details){
-    console.log("ALERT!!!!!!!!!!!!!!!!!!!!!!!!!HERE!!!!!!ALERT!!!!!");
+    console.log(`${details.documentId}`);
     return;
 },{urls: ["*://www.youtube.com/*"]},[]);
