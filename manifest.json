@@ -4,13 +4,22 @@
     "description": "Get statistics from your chess games",
     "version": "1.0",
     "action":{
-        "default_popup": "popup.html",
-        "default_icon": "good_png.png"
+        "default_popup": "popup.html"
     },
     "background": {
         "service_worker": "background.js",
         "type": "module"
     },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://youtube.com/*",
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*"
+          ]
+        }
+      ],
     "permissions":[
         "storage",
         "webRequest",
