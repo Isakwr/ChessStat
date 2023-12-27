@@ -1,5 +1,5 @@
 let filter = {urls: ["https://www.youtube.com"]};
-const registeredUrls = new Map(["thisisurl", [0,1]]);
+const registeredUrls = new Map([["thisisurl", [0,1]]]);
 
 chrome.webRequest.onCompleted.addListener(function(details){
     registeredUrls.set(details.documentId, 1);
